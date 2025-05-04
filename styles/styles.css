@@ -1,0 +1,397 @@
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #1cc88a;
+  --button-bg: #007bff;
+  --button-hover: #1cc88a;
+  --text-color: #555;
+  --input-border: #ccc;
+  --card-bg: #f8f9fa;
+  --card-shadow: rgba(70, 42, 42, 0.4);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  width: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#navbar {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left, .logo img {
+  width: 50px;
+}
+
+.logotipo img{
+  display: none;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-center {
+  flex: 2;
+  justify-content: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--button-bg);
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav #agendar {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px; 
+  height: 25px;
+  z-index: 9999;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#banner {
+  display: flex;
+  width: 85%;
+  margin: 2rem auto 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#banner .bg {
+  width: 50%;
+}
+
+.bg .img-banner {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.descricao {
+  width: 50%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.titulo {
+  font-size: 42pt;
+  color: #007bff;
+  text-transform: uppercase;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #075205;
+  margin: 1rem auto;
+  width: fit-content;
+}
+
+.descricao #agendar {
+  margin: 4em auto auto auto;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.descricao #agendar:hover {
+  border: 1px solid #007BFF;
+  /* background-color: white; */
+  color: #007BFF;
+  transition: ease-out 0.4s;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28pt;
+  text-transform: uppercase;
+  color: #007bff;
+  margin-top: 30px;
+}
+
+.service_card {
+  flex: 1 1 30%;
+  max-width: 30%;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 30%;
+  flex-wrap: wrap;
+  margin: 2rem 1rem 2rem 0;
+  box-shadow: 0 2px 4px rgba(70, 42, 42, 0.4);
+}
+
+.card_content {
+  flex-grow: 1;
+  min-height: 30%;
+}
+
+.card_content h3 {
+  margin-top: 8px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.card_content p {
+  text-align: left;
+}
+
+.card_image img {
+  width: 100%;
+  border-radius: 4px;
+  height: auto;
+}
+
+.cards_service .card img {
+  width: 300px;
+  height: 300px;
+}
+
+.card_content #agendar {
+  margin: 2rem auto 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card_content #agendar:hover {
+  /* background-color: #fff; */
+  transition: ease-out 0.4s;
+  color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 30px auto 0 auto;
+}
+
+input, textarea, #btn {
+  padding: 0.8rem;
+  max-width: 100%;
+  min-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#btn {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Media query para dispositos moveis com telas menores */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+  }
+
+  .navbar-left, .navbar-right, .navbar-center {
+    width: 100%;
+    /* justify-content: space-between; */
+  }
+
+  .navbar-center {
+    order: 3;
+  }
+
+ .logo img {
+    display: none;
+  }
+
+  .logotipo img{
+    width: 50px;
+    display: inline;
+  }
+
+  nav ul {
+    margin: 0 auto;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    display: none;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .navbar-right button {
+    display: none;
+  }
+
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner .bg, .descricao {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    
+  }
+    
+  .service_card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .servicos {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+}

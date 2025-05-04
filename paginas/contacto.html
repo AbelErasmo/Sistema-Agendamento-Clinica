@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contacto.styles.css">
+    <link href="../styles/styles.css" rel="stylesheet"/>
+    <title>Contacto</title>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="navbar-left">
+          <div class="logo">
+            <img src="./imagens/logotipo.png" alt="Logo" />
+          </div>
+        </div>
+      
+        <div class="navbar-center">
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="/index.html#agendar_consulta">Agendamento</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar-se</a></li>
+          </ul>
+        </div>
+      
+        <div class="navbar-right">
+            <div class="logotipo">
+                <img src="../imagens/logotipo.png" alt="Logo" />
+            </div>
+
+          <button id="agendar"><a href="/index.html#agendar_consulta">Agendar consulta</a></button>
+          <div class="menu-toggle" onclick="menuAbrirFechar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    
+      <header>
+        <h1 class="titulo">Clínica Dentária</h1>
+      </header>
+    
+      <div class="container">
+        <h2 class="contact-title">Entre em contato conosco</h2>
+        <p class="contact-description">
+          Estamos à disposição para esclarecer suas dúvidas sobre tratamentos e agendar sua consulta.
+        </p>
+        
+        <div class="contact-info">
+          <p><strong>Endereço:</strong> Moamba, 112, Maputo Província, Moçambique</p>
+          <p><strong>Telefone:</strong>(+258) 84 589 3117</p>
+          <p><strong>Email:</strong>israelzitha@gmail.com</p>
+        </div>
+    
+        <form action="#" class="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Seu Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+          </div>
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

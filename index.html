@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet"/>
+    <title>Página principal</title>
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div class="navbar-left">
+          <div class="logo">
+            <img src="./imagens/logotipo.png" alt="Logo" />
+          </div>
+        </div>
+      
+        <div class="navbar-center">
+          <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#servicos" class="btn">Serviços</a></li>
+            <li><a href="paginas/cadastro.html">Agendamento</a></li>
+            <li><a href="paginas/contacto.html">Contacto</a></li>
+            <li><a href="paginas/login.html">Login</a></li>
+            <li><a href="paginas/cadastro.html">Cadastrar-se</a></li>
+          </ul>
+        </div>
+      
+        <div class="navbar-right">
+            <div class="logotipo">
+                <img src="./imagens/logotipo.png" alt="Logo" />
+              </div>
+
+          <button id="agendar"><a href="#agendar_consulta">Agendar consulta</a></button>
+          <div class="menu-toggle" onclick="menuAbrirFechar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    
+    <section id="banner">
+        <div class="bg">
+           <img class="img-banner" src="imagens/img-banner.png"></img>
+        </div>
+        <div class="descricao">
+            <h1 class="titulo">Clínica Dentária</h1>
+            <h2 class="subtitulo">Confiança, inovação e cuidado.</h2>
+            <p class="slogan">O teu sorriso é a nossa missão. <br/> Estamos aqui para transformar sua vida<br/> com um sorriso que você merece.</p>
+            
+            <button id="agendar"><a href="#agendar_consulta">Agendar consulta</a></button>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <h1>Nossos Serviços</h1>
+        
+        <div class="cards">
+            <div class="service_card">
+                <div class="card_image">
+                    <img src="./imagens/5.jpg" alt="Imagem da Clínica Dentária" />
+                </div>
+                <div class="card_content">
+                    <h3>Clareamento Dental</h3>
+                    <p class="description">Procedimento estético para deixar os dentes mais brancos e melhorar o sorriso.</p>
+                    <button id="agendar"><a href="#agendar_consulta">Agendar consulta</a></button>
+                </div>
+            </div>
+    
+            <div class="service_card">
+                <div class="card_image">
+                    <img src="./imagens/3.jpg" alt="Imagem da Clínica Dentária" />
+                </div>
+                <div class="card_content">
+                    <h3>Limpeza e Profilaxia Dental</h3>
+                    <p class="description">Remoção de placa, tártaro e polimento dos dentes para manter a saúde bucal e prevenir doenças gengivais.</p>
+                    <button id="agendar"><a href="#agendar_consulta">Agendar consulta</a></button>
+                </div>
+            </div>
+
+            <div class="service_card">
+                <div class="card_image">
+                    <img src="./imagens/4.jpg" alt="Imagem da Clínica Dentária" />
+                </div>
+                <div class="card_content">
+                    <h3>Tratamento de Canal</h3>
+                    <p class="description">Processo para salvar dentes danificados ou infeccionados, evitando a extração.</p>
+                    <button id="agendar"><a href="#agendar_consulta">Agendar consulta</a></button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="agendar">
+        <h1 id="agendar_consulta">Agende a sua Consulta</h1>
+        <form>
+            <label>Nome completo:</label>
+            <input type="text" placeholder="Seu nome" required>
+            <label>Email:</label>
+            <input type="email" placeholder="Seu e-mail" required>
+            <label>Data da consulta:</label>
+            <input type="datetime-local" required>
+            <label>Telefone:</label>
+            <input type="tel" placeholder="Telefone (opcional)">
+            <label>Mensagem:</label>
+            <textarea placeholder="Mensagem"></textarea>
+            <button type="submit" id="btn">Enviar</button>
+        </form>
+    </section>
+
+    
+    <footer>
+        &copy; 2025 Clínica Dentária – Todos os direitos reservados.
+    </footer>
+    
+    <script src="scripts/javascript.js"></script>
+</body>
+</html>

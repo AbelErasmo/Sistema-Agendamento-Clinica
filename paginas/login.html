@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.styles.css">
+    <link href="../styles/styles.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="navbar-left">
+          <div class="logo">
+            <img src="../imagens/logotipo.png" alt="Logo" />
+          </div>
+        </div>
+      
+        <div class="navbar-center">
+          <ul id="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="/index.html#agendar_consulta">Agendamento</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar-se</a></li>
+          </ul>
+        </div>
+      
+        <div class="navbar-right">
+          <div class="logotipo">
+            <img src="../imagens/logotipo.png" alt="Logo" />
+          </div>
+          <button id="agendar"><a href="/index.html#agendar_consulta">Agendar consulta</a></button>
+          <div class="menu-toggle" onclick="menuAbrirFechar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+    <div class="login-container">
+        <h2>Bem-vindo a Clínica Dentária</h2>
+        <p>Insira suas credenciais para acessar o sistema</p>
+        <form action="/login" method="POST">
+            <input type="email" placeholder="E-mail" required>
+            <input type="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="register-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <footer>
+        &copy; 2025 Clínica Dentária – Todos os direitos reservados.
+    </footer>
+    
+    <script src="../scripts/javascript.js"></script>
+</body>
+</html>

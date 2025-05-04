@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #1cc88a;
+    --button-bg: #007bff;
+    --button-hover: #1cc88a;
+    --input-border: #ccc;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .register-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    background: var(--button-bg);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: var(--button-hover);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--button-bg);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .register-container {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+  
