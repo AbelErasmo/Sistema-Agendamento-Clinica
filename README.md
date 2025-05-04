@@ -1,5 +1,7 @@
 # Sistema-Agendamento-Clinica
+
 ## Tecnologias Utilizadas
+==================================
     <ol>
         <li>HTML5: para a estruturação do conteúdo.</li>
         <li>CSS3: para o design, layout responsivo e personalização visual.</li>
@@ -9,6 +11,7 @@
         <li>Imagens: otimizadas e adaptadas para web.</li>
     </ol>
 ## Estrutura das Páginas
+==================================
     <ol>
         <li>Página Inicial (index.html):</li>
         <li>Navbar com logo, navegação e botão de agendamento.</li>
@@ -19,6 +22,7 @@
     <ol>
 
 ## Outras Páginas:
+==================================
     <ol>
         <li>cadastro.html: cadastro de novos pacientes.</li>
         <li>contacto.html: formulário de contacto.</li>
@@ -28,6 +32,7 @@
     </ol>
 
 ## Funcionalidades Desenvolvidas
+==================================
     <ol>
         <li>Menu responsivo com botão "hamburger" em telas pequenas.</li>
         <li>Scroll automático para seções com id (como #agendar_consulta).</li>
@@ -37,6 +42,7 @@
     </ol>
 
 ## Design Responsivo
+==================================
 Com uso de media queries, o layout adapta-se para diferentes tamanhos de tela:
     <ol>
         <li>Navbar e menu alternam entre horizontal e vertical.</li>
