@@ -1,40 +1,50 @@
 # Sistema-Agendamento-Clinica
-##Tecnologias Utilizadas
-    ###HTML5: para a estruturação do conteúdo.
-    ###CSS3: para o design, layout responsivo e personalização visual.
-    ###JavaScript: para interatividade do menu e rolagem suave.
-    ###Media Queries: para garantir o comportamento responsivo em telas menores.
-    ###Editor de Código: VS Code.
-    ###Imagens: otimizadas e adaptadas para web.
-##Estrutura das Páginas
-    ###Página Inicial (index.html):
-    ###Navbar com logo, navegação e botão de agendamento.
-    ###Banner com imagem e slogan da clínica.
-    ###Seção de Serviços com cards descritivos.
-    ###Formulário de Agendamento.
-    ###Rodapé com direitos reservados.
+## Tecnologias Utilizadas
+    <ol>
+        <li>HTML5: para a estruturação do conteúdo.</li>
+        <li>CSS3: para o design, layout responsivo e personalização visual.</li>
+        <li>JavaScript: para interatividade do menu e rolagem suave.</li>
+        <li>Media Queries: para garantir o comportamento responsivo em telas menores.</li>
+        <li>Editor de Código: VS Code.</li>
+        <li>Imagens: otimizadas e adaptadas para web.</li>
+    </ol>
+## Estrutura das Páginas
+    <ol>
+        <li>Página Inicial (index.html):</li>
+        <li>Navbar com logo, navegação e botão de agendamento.</li>
+        <li>Banner com imagem e slogan da clínica.</li>
+        <li>Seção de Serviços com cards descritivos.</li>
+        <li>Formulário de Agendamento.</li>
+        <li>Rodapé com direitos reservados.</li>
+    <ol>
 
-##Outras Páginas:
-    ###cadastro.html: cadastro de novos pacientes.
-    ###contacto.html: formulário de contacto.
-    ###login.html: login para pacientes.
-    ###consulta.html para pacientes.
-    ###Index.html página principal
+## Outras Páginas:
+    <ol>
+        <li>cadastro.html: cadastro de novos pacientes.</li>
+        <li>contacto.html: formulário de contacto.</li>
+        <li>login.html: login para pacientes.</li>
+        <li>consulta.html para pacientes.</li>
+        <li>Index.html página principal</li>
+    </ol>
 
-##Funcionalidades Desenvolvidas
-    ###Menu responsivo com botão "hamburger" em telas pequenas.
-    ###Scroll automático para seções com id (como #agendar_consulta).
-    ###Formulário de agendamento funcional, com campos validados (nome, email, data, telefone, mensagem).
-    ###Cards de serviços organizados horizontalmente em telas grandes e em coluna em telas pequenas.
-    ###Estilização via variáveis CSS para facilitar manutenção de cores e temas.
+## Funcionalidades Desenvolvidas
+    <ol>
+        <li>Menu responsivo com botão "hamburger" em telas pequenas.</li>
+        <li>Scroll automático para seções com id (como #agendar_consulta).</li>
+        <li>Formulário de agendamento funcional, com campos validados (nome, email, data, telefone, mensagem).</li>
+        <li>Cards de serviços organizados horizontalmente em telas grandes e em coluna em telas pequenas.</li>
+        <li>Estilização via variáveis CSS para facilitar manutenção de cores e temas.</li>
+    </ol>
 
-##Design Responsivo
+## Design Responsivo
 Com uso de media queries, o layout adapta-se para diferentes tamanhos de tela:
-    ###Navbar e menu alternam entre horizontal e vertical.
-    ###Cards de serviços passam de layout em linha para coluna.
-    ###Imagens e textos redimensionam automaticamente.
-    ###Botões e inputs ajustam-se para manter acessibilidade na página.
+    <ol>
+        <li>Navbar e menu alternam entre horizontal e vertical.</li>
+        <li>Cards de serviços passam de layout em linha para coluna.</li>
+        <li>Imagens e textos redimensionam automaticamente.</li>
+        <li>Botões e inputs ajustam-se para manter acessibilidade na página.</li>
+    </ol>
 
-##Navegação por âncoras
+## Navegação por âncoras
 Links do menu ou de outras páginas redirecionam corretamente para seções específicas, por exemplo: <a href="index.html#agendar_consulta">Agendar</a>
 Esse link leva o usuário diretamente à seção de agendamento, mesmo vindo de outra página.
