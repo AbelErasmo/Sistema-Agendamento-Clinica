@@ -19,7 +19,7 @@
         <li>Seção de Serviços com cards descritivos.</li>
         <li>Formulário de Agendamento.</li>
         <li>Rodapé com direitos reservados.</li>
-    <ol>
+    </ol>
 
 ## Outras Páginas:
 ==================================
